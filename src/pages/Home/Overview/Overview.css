@@ -1,0 +1,14 @@
+.overview {
+  display: flex;
+  border-bottom: 5px solid #406e8e;
+  border-left: 3px solid #406e8e;
+  border-bottom-left-radius: 50px;
+}
+.overview-cover img {
+  /* border-radius: 20px; */
+  width: 400px;
+  margin-left: 20px;
+}
+.overview-title {
+  color: #406e8e;
+}

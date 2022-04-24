@@ -2,20 +2,29 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import slider_1 from "../../../images/slider/slider_1.jpg";
 import slider_2 from "../../../images/slider/slider_2.jpg";
-import slider_3 from "../../../images/slider/slider_3.png";
 
 const Slider = () => {
   return (
     <Carousel fade>
       <Carousel.Item>
-        <img className="d-block w-100" src={slider_1} alt="First slide" />
+        <img
+          height="621px"
+          className="d-block w-100"
+          src={slider_1}
+          alt="First slide"
+        />
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={slider_2} alt="Second slide" />
+        <img
+          height="621px"
+          className="d-block w-100"
+          src={slider_2}
+          alt="Second slide"
+        />
 
         <Carousel.Caption>
           <h3>Second slide label</h3>
@@ -24,9 +33,9 @@ const Slider = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          height="400px"
+          height="621px"
           className="d-block w-100"
-          src={slider_3}
+          src={slider_1}
           alt="Third slide"
         />
 
