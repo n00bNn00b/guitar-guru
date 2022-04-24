@@ -9,13 +9,11 @@ const Courses = () => {
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
-  console.log(courses);
+  // console.log(courses);
   return (
     <div className="container courses-container">
-      <h2 className="text-center course-title">
-        Popular Courses {courses.length}{" "}
-      </h2>
-      <div className="row">
+      <h2 className="text-center course-title pt-3">Popular Courses </h2>
+      <div className="row mb-2">
         {courses.map((course) => (
           <Course key={course.id} course={course} />
         ))}
