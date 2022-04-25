@@ -4,7 +4,7 @@ import "./Overview.css";
 
 const Overview = () => {
   return (
-    <div className="overview container w-100">
+    <div className="overview container w-100 bg bg-white ">
       <div>
         <h1 className="overview-title mt-3">Overview</h1>
         <p>
