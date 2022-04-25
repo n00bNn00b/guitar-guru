@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 
 const Course = ({ course }) => {
   const { name, image, description } = course;
@@ -9,9 +10,13 @@ const Course = ({ course }) => {
         <div className="card-body">
           <h5 className="card-title course-title text-center">{name}</h5>
           <p className="card-text">{description}</p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
+          <Button
+            href="#"
+            target="_blank"
+            style={{ backgroundColor: "#406e8e" }}
+          >
+            Watch Video
+          </Button>
         </div>
       </div>
     </div>

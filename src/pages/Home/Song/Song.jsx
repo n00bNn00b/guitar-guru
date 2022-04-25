@@ -13,7 +13,11 @@ const Song = ({ song }) => {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text>
-          <Button href={yt_link} target="_blank" variant="primary">
+          <Button
+            href={yt_link}
+            target="_blank"
+            style={{ backgroundColor: "#406e8e" }}
+          >
             Watch Video
           </Button>
         </Card.Body>
