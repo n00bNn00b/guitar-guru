@@ -6,7 +6,7 @@ const Course = ({ course }) => {
   return (
     <div className="g-5 col-sm-12 col-md-6 col-lg-4 ">
       <div className="card " style={{ width: "18rem" }}>
-        <img src={image} className="card-img-top" alt="..." />
+        <img height="350px" src={image} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title course-title text-center">{name}</h5>
           <p className="card-text">{description}</p>
