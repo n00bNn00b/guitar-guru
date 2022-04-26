@@ -32,6 +32,7 @@ const Signup = () => {
 
         <div className="text-center">
           <Button
+            disabled={!agree}
             style={{ backgroundColor: "#406e8e" }}
             variant="primary"
             type="submit"
@@ -43,12 +44,6 @@ const Signup = () => {
       <p style={{ color: "#406e8e" }}>
         Already Have an Account?{" "}
         <span style={{ fontWeight: "bold", cursor: "pointer" }}>Login</span>
-      </p>
-      <p style={{ color: "#406e8e" }}>
-        Forgot Password?{" "}
-        <span style={{ fontWeight: "bold", cursor: "pointer" }}>
-          Reset Password
-        </span>
       </p>
     </div>
   );

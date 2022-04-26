@@ -11,8 +11,8 @@ const Courses = () => {
   }, []);
   // console.log(courses);
   return (
-    <div className="container courses-container">
-      <h2 className="text-center course-title pt-3">Popular Courses </h2>
+    <div id="courses" className="container courses-container">
+      <h2 className="text-center  course-title pt-3">Popular Courses </h2>
       <div className="row mb-2 text-center">
         {courses.map((course) => (
           <Course key={course.id} course={course} />

@@ -1,7 +1,18 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
+import {
+  useSendPasswordResetEmail,
+  useSignInWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
+  const [signInWithEmailAndPassword, user, loading, error] =
+    useSignInWithEmailAndPassword(auth);
+
+  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
   return (
     <div className="container bg bg-light p-3">
       <Form>
@@ -23,6 +34,7 @@ const Login = () => {
           </Button>
         </div>
       </Form>
+      <SocialLogin />
       <p style={{ color: "#406e8e" }}>
         New to Guitar Guru?{" "}
         <span style={{ fontWeight: "bold", cursor: "pointer" }}>Register</span>

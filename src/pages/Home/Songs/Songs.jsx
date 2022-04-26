@@ -11,7 +11,7 @@ const Songs = () => {
   }, []);
   console.log(songs);
   return (
-    <div className="container bg bg-white songs-container">
+    <div id="songs" className="container bg bg-white songs-container">
       <h2 className="text-center pt-3">Popular Songs </h2>
       <div className="row mb-2 justify-content-center text-center">
         {songs.map((song) => (
