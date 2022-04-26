@@ -10,5 +10,18 @@
   margin-left: 20px;
 }
 .overview-title {
-  color: #406e8e;
+  color: #50a0db;
+}
+
+@media screen and (max-width: 350px) {
+  .overview {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 351px) and (max-width: 970px) {
+  .overview {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
