@@ -1,7 +1,6 @@
 import React from "react";
 import auth from "../../../firebase.init";
 import {
-  useSignInWithFacebook,
   useSignInWithGithub,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
@@ -17,26 +16,26 @@ const SocialLogin = () => {
   const [signInWithGithub, userGitHub, loadingGitHub, errorGitHub] =
     useSignInWithGithub(auth);
 
-  const [signInWithFacebook, userFacebook, loadingFacebook, errorFacebook] =
-    useSignInWithFacebook(auth);
+  // const [signInWithFacebook, userFacebook, loadingFacebook, errorFacebook] =
+  //   useSignInWithFacebook(auth);
 
   const navigate = useNavigate();
   let errorMessage = "";
 
-  if (loading || loadingGitHub || loadingFacebook) {
+  if (loading || loadingGitHub) {
     return <Loading />;
   }
 
-  if (error || errorGitHub || errorFacebook) {
+  if (error || errorGitHub) {
     errorMessage = (
       <p className="text-danger">
-        Error: {error?.message} {errorGitHub?.message} {errorFacebook.message}
+        Error: {error?.message} {errorGitHub?.message}
       </p>
     );
     toast("Something Went Wrong!");
   }
 
-  if (user || userGitHub || userFacebook) {
+  if (user || userGitHub) {
     navigate("/");
   }
 
