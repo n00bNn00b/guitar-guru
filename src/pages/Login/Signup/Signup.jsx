@@ -5,9 +5,11 @@ import {
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import auth from "../../../firebase.init";
 import Loading from "../../Shared/Loading/Loading";
+import "react-toastify/dist/ReactToastify.css";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Signup = () => {
   const [agree, setAgree] = useState(false);
@@ -20,6 +22,12 @@ const Signup = () => {
   const navigateToLogin = (e) => {
     navigate("/login");
   };
+  let errorMessage = "";
+
+  if (error || errorProfile) {
+    return <Loading />;
+    errorMessage = <p>Error: {error?.message || errorProfile?.message}</p>;
+  }
 
   if (loading || updating) {
     return <Loading />;
@@ -93,7 +101,10 @@ const Signup = () => {
           </Button>
         </div>
       </Form>
-      <p style={{ color: "#406e8e" }}>
+
+      {errorMessage}
+      <SocialLogin />
+      <p className="pt-3" style={{ color: "#406e8e" }}>
         Already Have an Account?{" "}
         <span
           onClick={navigateToLogin}
@@ -102,6 +113,7 @@ const Signup = () => {
           Login
         </span>
       </p>
+      <ToastContainer />
     </div>
   );
 };

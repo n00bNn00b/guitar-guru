@@ -1,41 +1,41 @@
 [
   {
-    "id": 1,
+    "id": "1e100basicGuitar101",
     "name": "Learn Guitar As A Beginner",
     "image": "https://i.ibb.co/k4sP5tK/beginner.jpg",
     "description": "Learn Guitar from scratch. A complete course for absolute beginners. This course has become very popular among the youngstars who has passion to learn to play guitar. Regular finger excercises, Natural Major and Minor scales, Open Chords, Bar Chords and others are covered in this course.",
     "price": 99.99
   },
   {
-    "id": 2,
+    "id": "2e100advancedGuitar201",
     "name": "Advanced Guitar Playing",
     "image": "https://img.freepik.com/free-vector/hand-drawn-electric-guitar-with-ribbon-text-heavy-metal-style_1284-38759.jpg",
     "description": "Advanced Lessions for guitar players. The Minor Pentatonic Scale, Blues, Natural Minor, Major, Dorian, Mixolydian etc and their modes will be covered as well. Sweeping, Whammy Bar technique, Guitar Harmonics Arpegeos, shredding etc will be covered in this Advanced course. ",
     "price": 349.99
   },
   {
-    "id": 3,
+    "id": "3e100BassGroove201",
     "name": "Groove with Bass",
     "image": "https://i.ibb.co/fCQPqNk/bass.jpg",
     "description": "This course is for them who has passion to play Bass. Regular finger escercises, hammering, slapping, groove etc are covered in this course. Learn to play bass with jazz, rock, melo etc genres.",
     "price": 349.99
   },
   {
-    "id": 4,
+    "id": "4e100IndianClassical202",
     "name": "Indian Classical",
     "image": "https://i.ibb.co/k4sP5tK/beginner.jpg",
     "description": "Do you want to learn Raaga, Thants? Yes, this course is exclusively for you. Learn indian scales from raaga Bilawal to Yaman. All raagas will be covered in this course. ",
     "price": 249.99
   },
   {
-    "id": 5,
+    "id": "5e100BasicHarmonica101",
     "name": "Harmonica for Beginners",
     "image": "https://i.ibb.co/D5SWzpg/harmonica.jpg",
     "description": "Learn to play harmonica from scratch. All the major and minor scales will be covered in this course along with regular breathing excercises, blues and scale changing.",
     "price": 99.99
   },
   {
-    "id": 6,
+    "id": "6e100Vocal201",
     "name": "Vocal Coaching",
     "image": "https://i.ibb.co/6rxsxFN/vocal-coach.jpg",
     "description": "Regular throat excercises, breathing excercises, tempo and others are covered in this course. Learn to change low to high and high to low pitch techniques are covered in this course.",

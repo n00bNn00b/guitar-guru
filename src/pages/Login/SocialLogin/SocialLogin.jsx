@@ -7,6 +7,8 @@ import {
 import { useNavigate } from "react-router-dom";
 import Loading from "../../Shared/Loading/Loading";
 import { Button } from "react-bootstrap";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SocialLogin = () => {
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
@@ -31,6 +33,7 @@ const SocialLogin = () => {
 
   if (user || userGitHub) {
     navigate("/");
+    toast("Hello", user);
   }
 
   return (
@@ -67,6 +70,7 @@ const SocialLogin = () => {
           <img style={{ width: "40px" }} src="" alt="" />
           <span className="px-2">GitHub Sign In</span>
         </Button>
+        <ToastContainer />
       </div>
     </div>
   );
