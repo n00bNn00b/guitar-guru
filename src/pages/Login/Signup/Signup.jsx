@@ -25,7 +25,11 @@ const Signup = () => {
   let errorMessage = "";
 
   if (error || errorProfile) {
-    errorMessage = <p>Error: {error?.message || errorProfile?.message}</p>;
+    errorMessage = (
+      <p>
+        Error: {error?.message} {errorProfile?.message}
+      </p>
+    );
   }
 
   if (loading || updating) {
