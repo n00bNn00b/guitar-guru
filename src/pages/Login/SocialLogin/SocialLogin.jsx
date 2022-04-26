@@ -33,7 +33,7 @@ const SocialLogin = () => {
 
   if (user || userGitHub) {
     navigate("/");
-    toast("Hello", user);
+    toast("Hello");
   }
 
   return (

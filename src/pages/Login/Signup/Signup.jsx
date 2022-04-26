@@ -25,7 +25,6 @@ const Signup = () => {
   let errorMessage = "";
 
   if (error || errorProfile) {
-    return <Loading />;
     errorMessage = <p>Error: {error?.message || errorProfile?.message}</p>;
   }
 
