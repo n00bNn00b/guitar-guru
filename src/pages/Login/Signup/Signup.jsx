@@ -1,24 +1,76 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
+import {
+  useCreateUserWithEmailAndPassword,
+  useUpdateProfile,
+} from "react-firebase-hooks/auth";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import auth from "../../../firebase.init";
+import Loading from "../../Shared/Loading/Loading";
 
 const Signup = () => {
   const [agree, setAgree] = useState(false);
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+  const [updateProfile, updating, errorProfile] = useUpdateProfile(auth);
+
+  const navigate = useNavigate();
+
+  const navigateToLogin = (e) => {
+    navigate("/login");
+  };
+
+  if (loading || updating) {
+    return <Loading />;
+  }
+
+  if (user) {
+    navigate("/");
+  }
+
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+    const name = e.target.formBasicName.value;
+    const email = e.target.formBasicEmail.value;
+    const password = e.target.formBasicPassword.value;
+
+    await createUserWithEmailAndPassword(email, password);
+    await updateProfile({ displayName: name });
+    toast("Profile has been updated!");
+    navigate("/home");
+    console.log(name, email, password);
+  };
+
   return (
     <div className="container bg bg-light p-3">
       <h2 className="text-center mb-3">Register</h2>
-      <Form>
-        <Form.Control
-          className="mb-3"
-          type="text"
-          placeholder="Your Name"
-          required
-        />
+      <Form onSubmit={handleSignUp}>
+        <Form.Group className="mb-3" controlId="formBasicName">
+          <Form.Control
+            name="name"
+            className="mb-3"
+            type="text"
+            placeholder="Your Name"
+            required
+          />
+        </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control type="email" placeholder="Enter email" required />
+          <Form.Control
+            name="email"
+            type="email"
+            placeholder="Enter email"
+            required
+          />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Control type="password" placeholder="Password" required />
+          <Form.Control
+            name="password"
+            type="password"
+            placeholder="Password"
+            required
+          />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check
@@ -43,7 +95,12 @@ const Signup = () => {
       </Form>
       <p style={{ color: "#406e8e" }}>
         Already Have an Account?{" "}
-        <span style={{ fontWeight: "bold", cursor: "pointer" }}>Login</span>
+        <span
+          onClick={navigateToLogin}
+          style={{ fontWeight: "bold", cursor: "pointer" }}
+        >
+          Login
+        </span>
       </p>
     </div>
   );
