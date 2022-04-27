@@ -1,7 +1,5 @@
 # Guitar Guru
 
-[Guitar Guru Link] (https://guitar-guru-cht.web.app/)
-
 [Guitar Guru](https://guitar-guru-cht.web.app/) is a web app for music lovers who want learn instruments like guitar, harmonica, piano and so on.
 It is very simple to use. There are courses provided by a musician and instrumentalist. He demonstrates everything in every course.
 
