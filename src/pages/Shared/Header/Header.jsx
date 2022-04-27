@@ -38,9 +38,6 @@ const Header = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link className="header-color" href="home#reviews">
-              Reviews
-            </Nav.Link>
             <Nav.Link className="header-color" as={Link} to="/about">
               About
             </Nav.Link>

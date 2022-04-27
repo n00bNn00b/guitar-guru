@@ -9,7 +9,7 @@ const Songs = () => {
       res.json().then((data) => setSongs(data))
     );
   }, []);
-  console.log(songs);
+  // console.log(songs);
   return (
     <div id="songs" className="container  songs-container">
       <h2

@@ -50,7 +50,7 @@ const Signup = () => {
     await updateProfile({ displayName: name });
     toast("Profile has been updated!");
     navigate("/home");
-    console.log(name, email, password);
+    // console.log(name, email, password);
   };
 
   return (

@@ -2,8 +2,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container" style={{ color: "#50a0db" }}>
-      <h2>About Myself</h2>
+    <div
+      className="container"
+      style={{ color: "#50a0db", textAlign: "justify" }}
+    >
+      <h2 className="my-5">About Myself</h2>
       <p>
         <img
           style={{ borderRadius: "50%", width: "50%" }}

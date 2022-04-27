@@ -14,8 +14,10 @@ const Slider = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 style={{ color: "#a8cbe5" }}>Learn with Patience</h3>
+          <p style={{ color: "#a8cbe5" }}>
+            Learn guitar or any instrument with patience.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -27,8 +29,8 @@ const Slider = () => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Practice</h3>
+          <p>There is nothing but practice to make yourself perfect.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -40,9 +42,9 @@ const Slider = () => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          <h3 style={{ color: "#a8cbe5" }}>Be Creative</h3>
+          <p style={{ color: "#a8cbe5" }}>
+            With a lot of practising and improvising creativity comes out.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
