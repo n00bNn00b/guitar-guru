@@ -33,7 +33,7 @@ const Header = () => {
             <Nav.Link className="header-color" href="home#courses">
               Courses
             </Nav.Link>
-            <Nav.Link className="header-color" href="home#courses">
+            <Nav.Link className="header-color" as={Link} to="/blog">
               Blog
             </Nav.Link>
           </Nav>

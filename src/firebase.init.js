@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCXJmx3H1v9panosizay6zthjP_KyqoM2g",
-  authDomain: "guitar-guru-cht.firebaseapp.com",
-  projectId: "guitar-guru-cht",
-  storageBucket: "guitar-guru-cht.appspot.com",
-  messagingSenderId: "252281325339",
-  appId: "1:252281325339:web:45a7fb98a8ae84dc3935be",
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase

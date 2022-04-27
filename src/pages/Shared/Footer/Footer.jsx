@@ -8,6 +8,7 @@ const Footer = () => {
     <footer className="mt-1">
       <div className="text-center">
         &copy; {startingYear} - {presentYear} | All Rights Reserved.
+        <p>Developed by Real Dewan</p>
       </div>
     </footer>
   );

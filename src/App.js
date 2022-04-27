@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import About from "./pages/About/About";
+import Blog from "./pages/Blog/Blog";
 import Checkout from "./pages/Checkout/Checkout";
 import CourseDetail from "./pages/CourseDetail/CourseDetail";
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/course/:courseId" element={<CourseDetail />} />
+        <Route path="/blog" element={<Blog />} />
         <Route
           path="/thankyou"
           element={
