@@ -7,6 +7,7 @@ const ThankYou = () => {
         Thank You for the enrollment.
       </h1>
       <img
+        style={{ width: "100%" }}
         src="https://www.pngall.com/wp-content/uploads/2016/04/Thank-You-Free-PNG-Image.png"
         alt=""
       />
