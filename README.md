@@ -14,6 +14,8 @@ It is very simple to use. There are courses provided by a musician and instrumen
 - Guitar Guru is mobile responsive.
 - If user inputs wrong password, it will show an error message.
 
+* dynamic year on footer
+
 ### Technologies used in Guitar Guru
 
 - ReactJS- a JavaScript library
