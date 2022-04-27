@@ -9,7 +9,7 @@ const About = () => {
       <h2 className="my-5">About Myself</h2>
       <p>
         <img
-          style={{ borderRadius: "50%", width: "50%" }}
+          style={{ borderRadius: "50%", width: "30%" }}
           src="https://media-exp1.licdn.com/dms/image/C5603AQFK3d0sc9T-bA/profile-displayphoto-shrink_800_800/0/1635238401379?e=1656547200&v=beta&t=oa05QT6Wt3Nt9nSLPSEKrqjF2UN6faDMoe5d8zC3LiA"
           alt=""
         />
@@ -94,6 +94,8 @@ const About = () => {
             fontWeight: "bold",
           }}
           href="https://www.github.com/n00bNn00b"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           My GitHub{" "}
         </a>

@@ -10,6 +10,7 @@ import RequireAuth from "./pages/Login/RequireAuth/RequireAuth";
 import Signup from "./pages/Login/Signup/Signup";
 import Footer from "./pages/Shared/Footer/Footer";
 import Header from "./pages/Shared/Header/Header";
+import NotFound from "./pages/Shared/NotFound/NotFound";
 import ThankYou from "./pages/ThankYou/ThankYou";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
             </RequireAuth>
           }
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
